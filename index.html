@@ -2,34 +2,45 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1867ff0a53.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam McFadden</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#name">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Home</a></li>
-            <li><a href="Spring2020Resume.pdf" target="_blank">Resume</a></li>
-            <li><a href="https://github.com/LiamMcFadden" target="_blank">Github</a></li>
-            <li><a href="TODO" target="_blank">LinkedIn</a></li>
-        </ul>
-    </nav>
+    <div class="first-view">
+        <div class="nav">
+            <p class="name">Liam McFadden</p>
 
-    <div id="content">
-        <div id="name">
-            <h1>My Portfolio</h1>
-        </div>
+            <ul class="on-page">
+                <li><a href="#name">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="img/Spring2020Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
 
-        <div id="about">
-            <h2>About me...</h2>
-            <p>blah blah blah
+            <ul class="external">
+                <li><a href="https://github.com/LiamMcFadden" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="TODO" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div> 
+
+        <div class="about">
+            <h2>Hi! I'm Liam.</h2>
+            <p>
+                I am a rising junior at Virginia Tech and currently looking for a Summer/Fall 2020 internship. <br>
+                Click below to learn more about me!
             </p>
+            <a href="#skills" class="learn-more">Learn more...</a>
         </div>
+    </div>
 
-        <div id="projects">
+    <div class="content">
+        <div class="skills" id="skills">
+            <h2>Skills</h2>
+        </div>
+        <div class="projects" id="projects">
             <h2>Projects</h2>
 
             <div class="project">
@@ -65,10 +76,10 @@
             </div>
         </div>
         
-        <div id="contact">
+        <div class="contact" id="contact">
             <h2>Contact</h2>
-            <p id="email">email: liamm18@vt.edu</p>
-            <p id="phone">phone: (315) 949-0201</p>
+            <p class="email">email: liamm18@vt.edu</p>
+            <p class="phone">phone: (315) 949-0201</p>
         </div>
     </div>
 

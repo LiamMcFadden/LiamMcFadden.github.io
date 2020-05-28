@@ -2,10 +2,114 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
-body {
-    background-color: orangered;
-    color: yellow;
-    line-height: 300%;
+h1, h2, h3 {
+    font-weight: 400;
 }
+
+.first-view {
+    min-height: 100vh;
+    background: url(img/flock-of-birds-917494.jpg) no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+.name {
+    transition: all 0.5s ease 0s;
+}
+
+.name:hover {
+    font-size: 20px;
+}
+
+.on-page {
+    list-style: none;
+}
+
+.on-page li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.nav li a:hover {
+    color: grey;
+    font-size: 18px;
+}
+
+.external li {
+    display: inline-block;
+}
+
+.fa-github {
+    font-size: 30px;
+}
+
+.fa-linkedin {
+    font-size: 30px;
+}
+
+.about {
+    margin: 200px auto 0 auto;
+    text-align: left;
+    width: fit-content;
+    /* background-color: #E9E6E6; */
+    /* box-shadow: 5px 10px 8px #444444; */
+    border-radius: 5px;
+}
+
+.about h2 {
+    font-size: 42px;
+}
+
+.about p {
+    margin-top: 20px;
+    line-height: 60px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.learn-more {
+    transition: all 0.3s ease 0s;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #5290f2;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+}
+
+.learn-more:hover {
+    font-size: 23px;
+    color: black;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
