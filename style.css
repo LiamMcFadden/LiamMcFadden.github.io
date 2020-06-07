@@ -16,11 +16,11 @@ h1, h2, h3 {
 }
 
 .nav {
-    font-size: 17px;
+    font-size: 1.1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
+    padding: 18px 10%;
 }
 
 .name {
@@ -28,7 +28,7 @@ h1, h2, h3 {
 }
 
 .name:hover {
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 
 .on-page {
@@ -40,7 +40,7 @@ h1, h2, h3 {
     padding: 0 20px;
 }
 
-.nav li a {
+.nav li a, .fa-github, .fa-linkedin {
     transition: all 0.3s ease 0s;
     text-decoration: none;
     color: black;
@@ -49,7 +49,12 @@ h1, h2, h3 {
 
 .nav li a:hover {
     color: grey;
-    font-size: 20px;
+    font-size: 1.4vw;
+}
+
+.fa-linkedin:hover, .fa-github:hover {
+    color: grey;
+    font-size: 1.5vw;
 }
 
 .external li {
@@ -57,17 +62,17 @@ h1, h2, h3 {
 }
 
 .fa-github {
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 .fa-linkedin {
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 .about {
     margin: 200px auto 0 auto;
     text-align: left;
-    width: fit-content;
+    width: 70%;
     /* background-color: #E9E6E6; */
     /* box-shadow: 5px 10px 8px #444444; */
     border-radius: 5px;
