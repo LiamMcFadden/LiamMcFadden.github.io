@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -11,6 +12,7 @@ h1, h2, h3 {
 
 .first-view {
     min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     background: url(img/flock-of-birds-917494.jpg) no-repeat;
     background-size: cover;
     text-align: center;
@@ -55,6 +57,7 @@ h1, h2, h3 {
 
 .content {
     min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 @media only screen and (min-width: 768px) {
@@ -90,6 +93,10 @@ h1, h2, h3 {
 
     .nav li a:hover, .fa-linkedin:hover, .fa-github:hover {
         color: #5290f2;
+    }
+
+    .about {
+        margin-top: 60px;
     }
 
     .about h2 {
