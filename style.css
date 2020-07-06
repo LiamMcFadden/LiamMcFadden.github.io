@@ -60,13 +60,30 @@ h1, h2, h3 {
     min-height: calc(var(--vh, 1vh) * 100);
 }
 
+.skills {
+    z-index: -1;
+    min-height: 50vh;
+    /*background-color: #343b45;*/
+}
+
+.projects {
+    min-height: 70vh;
+}
+
+.contact {
+    min-height: 10vh;
+}
+
 @media only screen and (min-width: 768px) {
     .nav{
+        width: 100%;
+        text-align: center;
+        top: 0;
+        z-index: 9999;
         display: inline-block;
-        padding: 30px 5%;
+        padding:20px 5%;
+        padding-top: 10px;
         font-size: 2vh;
-        justify-content: space-evenly;
-        align-items: center;
     }
 
     .on-page li {
@@ -95,11 +112,7 @@ h1, h2, h3 {
         color: #5290f2;
     }
 
-    .about {
-        margin-top: 60px;
-    }
-
     .about h2 {
-        padding-top: 30px;
+        padding-top: 100px;
     }
 }
