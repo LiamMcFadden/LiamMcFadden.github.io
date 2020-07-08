@@ -7,37 +7,19 @@
     scroll-behavior: smooth;
 }
 
-/* responsive layout from https://www.w3schools.com/css/css_rwd_grid.asp */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-
 .first-view {
+    position: absolute;
+    top: 10%;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+}
+
+
+.background {
     background: url(img/flock-of-birds-917494.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+
 }
 
 .nav {
@@ -45,12 +27,13 @@
     list-style: none;
     margin: auto;
     margin-bottom: 10vh;
+    margin-top: -10vh;
 }
 
 .nav li {
     font-size: 20px;
     display: inline-block;
-    padding: 20px;
+    padding: 2.5vw;
 }
 
 .nav a {
@@ -76,6 +59,11 @@
 }
 
 @media only screen and (max-width: 414px) {
+    .background {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+
     .nav {
         display: none;
     }
