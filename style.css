@@ -64,20 +64,7 @@
     margin-bottom: 2vh;
 }
 
-@media only screen and (max-width: 414px) {
-    .background {
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-    }
 
-    .nav {
-        display: none;
-    }
-
-    .about {
-        padding-top: 7vh;
-    }
-}
 
 .learn-more {
     margin-top: 20px;
@@ -95,7 +82,7 @@
 }
 
 .skills-bg {
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100 * 1.5);
     /* image from https://www.pexels.com/photo/snow-covered-mountain-1428277/ */
     background: url(img/snow-covered-mountain-1428277.jpg) no-repeat;
     background-size: cover;
@@ -103,7 +90,7 @@
 
 .skills-wrapper {
     position: absolute;
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100 * 1.5);
     width: 100%;
     top: calc(var(--vh, 1vh) * 100);
     color: white;
@@ -149,17 +136,120 @@
 }
 
 .Python {
-    margin: 0;
     text-align: initial;
-    width: fit-content;
 }
 
-.Python li, ul {
+.Python li, .Python ul {
     margin-left: 10px;
 }
 
+.other {
+    text-align: initial;
+}
+
+.other li, .other ul {
+    margin-left: 10px;
+}
+
+.projects-bg {
+    min-height: calc(var(--vh, 1vh) * 100);
+    /* image from https://www.pexels.com/photo/macro-shot-of-wooden-planks-326333/ */
+    background: url(img/macro-shot-of-wooden-planks-326333.jpg) no-repeat;
+    background-size: cover;
+}
+
+.projects-wrapper {
+    position: absolute;
+    top: calc(var(--vh, 1vh) * 100 * 2.5);
+    min-height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+}
+
+.projects {
+    width: 100%;
+    text-align: center;
+}
+
+.proj-title {
+    width: fit-content;
+    color: white;
+    margin: auto;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    font-size: 5.2vh;
+    border-bottom: 3px solid #8cb8ff; 
+}
+
+.project {
+    vertical-align: top;
+    max-width: 33vw;
+    color: white;
+    display: inline-block;
+    background-color: #474747;
+    padding: 15px;
+    margin: 2vh;
+    width: fit-content;
+    border-bottom: 3px solid #8cb8ff;
+    -webkit-box-shadow: 6px 4px 18px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 4px 18px 2px rgba(0,0,0,0.75);
+    box-shadow: 6px 4px 18px 2px rgba(0,0,0,0.75);
+    line-height: 3vh;
+    background: rgba(128, 128, 128, 0.9); 
+    font-size: 2.2vh;
+}
+
+.project h3 {
+    width: fit-content;
+    border-bottom: 3px solid #8cb8ff;
+    margin: auto;
+}
+
+.project p {
+    font-size: 2vh;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.project a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-size: 2vh;
+}
+
+.project a:hover {
+    color: white;
+}
+
+#rl {
+    width: 80%;
+    height: 80%;
+}
 
 
+
+
+
+
+
+@media only screen and (max-width: 414px) {
+    .background {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .about {
+        padding-top: 7vh;
+    }
+
+    .skills-bg, .skills-wrapper {
+        min-height: calc(var(--vh, 1vh) * 100 * 2);
+    }
+}
 
 
 
