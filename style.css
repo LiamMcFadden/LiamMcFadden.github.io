@@ -10,16 +10,16 @@
 .first-view {
     position: absolute;
     top: 10%;
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
     width: 100%;
 }
 
 
 .background {
+    /* image from https://www.pexels.com/photo/flock-of-birds-917494 */
     background: url(img/flock-of-birds-917494.jpg) no-repeat;
     background-size: cover;
-    height: calc(var(--vh, 1vh) * 100);
-
+    min-height: calc(var(--vh, 1vh) * 100);
 }
 
 .nav {
@@ -31,6 +31,7 @@
 }
 
 .nav li {
+    transition: all 0.3s ease 0s;
     font-size: 20px;
     display: inline-block;
     padding: 2.5vw;
@@ -43,6 +44,11 @@
 
 .nav a:hover {
     color: black;
+}
+
+.sticky {
+    z-index: 1000000000;
+    position: fixed;
 }
 
 .about {
@@ -87,3 +93,81 @@
 .learn-more:hover {
     font-size: 2.2vh;
 }
+
+.skills-bg {
+    min-height: calc(var(--vh, 1vh) * 100);
+    /* image from https://www.pexels.com/photo/snow-covered-mountain-1428277/ */
+    background: url(img/snow-covered-mountain-1428277.jpg) no-repeat;
+    background-size: cover;
+}
+
+.skills-wrapper {
+    position: absolute;
+    min-height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    top: calc(var(--vh, 1vh) * 100);
+    color: white;
+}
+
+.skills {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills h2 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 6vh;
+    text-align: center;
+    font-size: 5.2vh;
+    border-bottom: 3px solid #8cb8ff;
+}
+
+.skills div {
+    border-bottom: 3px solid #8cb8ff;
+    -webkit-box-shadow: 6px 4px 18px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 4px 18px 2px rgba(0,0,0,0.75);
+    box-shadow: 6px 4px 18px 2px rgba(0,0,0,0.75);
+    margin-top: 3vh;
+    display: inline-block;
+    line-height: 4vh;
+    font-size: 2.2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 10px;
+    background: rgba(128, 128, 128, 0.4); 
+}
+
+.skills div h3 {
+    width: fit-content;
+    font-size: 2.4vh;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+.Python {
+    margin: 0;
+    text-align: initial;
+    width: fit-content;
+}
+
+.Python li, ul {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

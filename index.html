@@ -9,11 +9,11 @@
     <title>Liam McFadden</title>
 </head>
 <body>
-    <div class="background"></div>
+    <div class="background" id="top"></div>
     <div class="first-view">
-        <div class="nav">
+        <div class="nav" id="nav">
             <ul class="on-page">
-                <li><a href="#name">Home</a></li>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -33,50 +33,77 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="skills" id="skills">
+    <div class="skills-bg"></div>
+    <div class="skills-wrapper" id="skills">
+        <div class="skills">
             <h2>Skills</h2>
-        </div>
-        <div class="projects" id="projects">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>Name</h3>
-                <p>description</p>
-                <img src="" alt="">
-                <a href="">Try it out</a>
-                <a href="">See the code</a>
+            <div class="Java">
+                <h3>Java</h3>
+                <p>Most of my classwork is done in Java.</p>
             </div>
 
-            <div class="project">
-                <h3>Name</h3>
-                <p>description</p>
-                <img src="" alt="">
-                <a href="">Try it out</a>
-                <a href="">See the code</a>
+            <div class="C">
+                <h3>C</h3>
+                <p>This is the second most used language in my classwork.</p>
             </div>
 
-            <div class="project">
-                <h3>Name</h3>
-                <p>description</p>
-                <img src="" alt="">
-                <a href="">Try it out</a>
-                <a href="">See the code</a>
-            </div>
-
-            <div class="project">
-                <h3>Name</h3>
-                <p>description</p>
-                <img src="" alt="">
-                <a href="">Try it out</a>
-                <a href="">See the code</a>
+            <div class="Python">
+                <h3>Python</h3>
+                <p>Most of my python experience comes from my personal projects.</p>
+                <ul> 
+                    <li>I have experience with libraries such as:
+                        <ul>
+                            <li>Pyautogui</li>
+                            <li>OpenCV</li>
+                            <li>Keras/Tensorflow</li>
+                            <li>Requests</li>
+                            <li>Numpy</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        
-        <div class="contact" id="contact">
-            <h2>Contact me:</h2>
-            <p class="email">email: liamm18@vt.edu</p>
+    </div>
+
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Name</h3>
+            <p>description</p>
+            <img src="" alt="">
+            <a href="">Try it out</a>
+            <a href="">See the code</a>
         </div>
+
+        <div class="project">
+            <h3>Name</h3>
+            <p>description</p>
+            <img src="" alt="">
+            <a href="">Try it out</a>
+            <a href="">See the code</a>
+        </div>
+
+        <div class="project">
+            <h3>Name</h3>
+            <p>description</p>
+            <img src="" alt="">
+            <a href="">Try it out</a>
+            <a href="">See the code</a>
+        </div>
+
+        <div class="project">
+            <h3>Name</h3>
+            <p>description</p>
+            <img src="" alt="">
+            <a href="">Try it out</a>
+            <a href="">See the code</a>
+        </div>
+    </div>
+    
+    <div class="contact" id="contact">
+        <h2>Contact me:</h2>
+        <p class="email">email: liamm18@vt.edu</p>
     </div>
 
     <script src="app.js"></script>
