@@ -153,16 +153,16 @@
 /* PROJECTS NEEDS WORK, MAKE LIKE SKILLS */
 
 .projects-bg {
-    min-height: calc(var(--vh, 1vh) * 100 * 2);
+    min-height: calc(var(--vh, 1vh) * 100 * 2.5);
     /* image from https://www.pexels.com/photo/macro-shot-of-wooden-planks-326333/ */
-    background: url(img/macro-shot-of-wooden-planks-326333.jpg) no-repeat;
+    background: url(img/fogs-on-green-mountain-1054222.jpg) no-repeat;
     background-size: cover;
 }
 
 .projects-wrapper {
     position: absolute;
     top: calc(var(--vh, 1vh) * 100 * 2.5);
-    min-height: calc(var(--vh, 1vh) * 100 * 2);
+    min-height: calc(var(--vh, 1vh) * 100 * 2.5);
     width: 100%;
 }
 
@@ -185,7 +185,7 @@
 .project {
     margin-left: 1vw;
     margin-right: 1vw;
-    margin-top: 3vh;
+    margin-top: 8vh;
     max-width: 40vw;
     min-width: 500px;
     vertical-align: top;
@@ -198,7 +198,7 @@
     font-size: 2.2vh;
     padding: 15px;
     display: inline-block;
-    background: rgba(128, 128, 128, 0.9); 
+    background: rgba(128, 128, 128, 0.7); 
 }
 
 .project h3 {
@@ -226,16 +226,33 @@
     color: white;
 }
 
-.project img {
+.project img, iframe {
     width: 90%;
     height: 90%;
 }
 
+.contact {
+    text-align: left;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    line-height: 5vh;
+    color: white;
+}
 
+.contact h2 {
+    font-size: 4vh;
+    margin: initial;
+}
 
+@media only screen and (max-width: 1045px) {
+    .projects-wrapper, .projects-bg {
+        min-height: calc(var(--vh, 1vh) * 100 * 4);
+    }
 
-
-
+    .project {
+        max-width: 70vw;
+    }
+}
 
 @media only screen and (max-width: 414px) {
     .background {
@@ -261,7 +278,7 @@
 
     .projects-wrapper, .projects-bg {
         top: calc(var(--vh, 1vh) * 100 * 3);
-        min-height: calc(var(--vh, 1vh) * 100 * 3);
+        min-height: calc(var(--vh, 1vh) * 100 * 4);
     }
 }
 
