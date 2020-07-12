@@ -244,9 +244,9 @@
     margin: initial;
 }
 
-@media only screen and (max-width: 1045px) {
+@media only screen and (max-width: 1080px) {
     .projects-wrapper, .projects-bg {
-        min-height: calc(var(--vh, 1vh) * 100 * 4);
+        min-height: calc(var(--vh, 1vh) * 100 * 4.3);
     }
 
     .project {
