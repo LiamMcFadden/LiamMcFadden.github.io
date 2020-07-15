@@ -216,6 +216,8 @@
 }
 
 .project a {
+    background-color: white;
+    border-radius: 10px;
     text-decoration: none;
     color: black;
     padding: 5px;
@@ -224,6 +226,7 @@
 
 .project a:hover {
     color: white;
+    background-color: black;
 }
 
 .project img, iframe {
