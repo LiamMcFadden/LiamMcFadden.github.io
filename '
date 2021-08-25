@@ -18,7 +18,7 @@
             </nav>
             
             <section class="container">
-                <h3 class="container-sub-header">Contact Information</h3>
+                <h2 class="container-sub-header">Contact Information</h3>
                 <ul class="cred-list">
                     <li>Phone: (315) 949-0201</li>
                     <li>Email: liamm18@vt.edu</li>
@@ -29,7 +29,7 @@
         </header>
         
         <section id="education" class="container">
-            <h2 class="container-header">Education</h2>
+            <h3 class="container-sub-header">Education</h3>
             <ul class="cred-list">
                 <li>School: Virginia Polytechnic Institute and State Univeresity</li>
                 <li>Major: Computer Science</li>
@@ -39,8 +39,8 @@
         
         <section id="skills" class="container">
             <h2 class="container-header">Skills</h2>
-            <h3 class="container-sub-header">Programming Languages</h3>
-            <ul class="cred-list">
+            <h3>Programming Languages</h3>
+            <ul>
                 <li>C</li>
                 <li>Java</li>
                 <li>Python</li>
@@ -49,8 +49,8 @@
                 <li>MATLAB</li>
             </ul>
 
-            <h3 class="container-sub-header">Programming Skills/Experience</h3>
-            <ul class="cred-list">
+            <h3>Programming Skills/Experience</h3>
+            <ul>
                 <li>Object Oriented Programming</li>
                 <li>Git</li>
                 <li>Linux Command Line</li>
@@ -58,9 +58,9 @@
             </ul>
         </section>
         
-        <section id="extracurriculars" class="container">
-            <h2 class="container-header">Extracurriculars</h2>
-            <ul class="cred-list">
+        <section id="extracurriculars">
+            <h2>Extracurriculars</h2>
+            <ul>
                 <li>Virginia Tech Corps of Cadets
                     <ul>
                         <li>Military style leadership program.</li>
@@ -85,4 +85,5 @@
             </ul>
         </section>
     </body>
+
 </html>
