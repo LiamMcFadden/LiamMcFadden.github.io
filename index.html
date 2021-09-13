@@ -37,17 +37,37 @@
     <div class="skills-wrapper" id="skills">
         <div class="skills">
             <h2>Skills</h2>
-            <div class="Java">
+            <div class="lang">
                 <h3>Java</h3>
-                <p>Most of my classwork is done in Java.</p>
+                <ul>
+                    <li>Projects I have completed in C include:
+                        <ul>
+                            <li>Tower Of Hanoi Solver</li>
+                            <li>GIS Parser</li>
+                            <li>Dijkstra's SSAD Algorithm</li>
+                            <li>PR QuadTree</li>
+                            <li>Hash Table</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
 
-            <div class="C">
+            <div class="lang">
                 <h3>C</h3>
-                <p>This is the second most used language in my classwork.</p>
+                <ul>
+                    <li>Projects I have completed in C include:
+                        <ul>
+                            <li>Assembler (MIPS)</li>
+                            <li>Memory Allocator</li>
+                            <li>Custom Shell</li>
+                            <li>Web Server</li>
+                            <li>Thread Pool</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
 
-            <div class="Python">
+            <div class="lang">
                 <h3>Python</h3>
                 <p>Most of my python experience comes from my personal projects.</p>
                 <ul> 
@@ -69,7 +89,7 @@
                     <li>My classwork and personal experience has also exposed me to:
                         <ul>
                             <li>SQL</li>
-                            <li>Assembly</li>
+                            <li>GNU/Linux</li>
                             <li>Command Line</li>
                             <li>Git</li>
                             <li>Matlab</li>
@@ -81,7 +101,6 @@
                             <li>Leadership</li>
                             <li>Teamwork</li>
                             <li>Dedication</li>
-                            <li>Eagerness to learn</li>
                         </ul>
                     </li>
                 </ul>
@@ -114,28 +133,28 @@
             </div>
             <br>
             <div class="project" id="project3">
-                <h3>GIS System</h3>
-                <p>This is the final project written in C from my computer organization class. We were provided .txt files with anywhere from 100 to 25000 geographical information system records. 
-                    The task at hand was to parse these GIS files and apply commands specified in provided .txt files that indicated whether to report the total number of records in the 
-                    database that match a certain name and state, provide the details of a given feature name and state, or calculate the orthodromic distance between two locations. The 
-                    results of these commands were then written to a log file. Below is an example of one of these log files. Since this is a school project I cannot make the repository public on my github, howver if you wish to see 
-                    the code, click the link below and enter your github username and I'll share with you as soon as I can.</p>
-                <img src="img/exampleGISOutput.JPG" alt=""><br>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4u562eNjuqag-sMMQV7psWIqv5IO80Oqi59xMIIzL9oikxQ/viewform?usp=sf_link" target="_blank">~Request the code~</a>
+                <h3>Custom Shell</h3>
+                <p>This is a relatively standard shell implementation. Commands are issued by typing the
+                name of whatever command you want to run and pressing enter. Pipes, i/o redirection,
+                running programs that require exclusive access to the terminal, and redirecting stderr
+                are all supported. Jobs are controlled via the given job_list struct and a list of
+                job/pid pairs for fetching a job a given a certain pid. Click the link below to view an in depth README for the project.</p>
+                <img src="img/cush.png" alt=""><br>
+                <a href="img/readme.pdf" target="_blank">README</a>
             </div>
 
             <div class="project" id="project4">
-                <h3>Tower of Hanoi Solver</h3>
-                <p>This was one of the larger projects from my Java data structures class. The project displays a tower of hanoi puzzle with any desired amount of disks and solves it recursively. While this project is 
-                    pretty straightforward, it demonstrates a fair amount of object oriented programming. Since this is a school project I cannot make the GitHub repository public so if you wish to see the code, click the link below, 
-                    enter your GitHub username and I'll share it with you as soon as I can.</p>
-                <iframe src="https://giphy.com/embed/IgAfIAOlqwqhNJOUFA" width="480" height="298" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/IgAfIAOlqwqhNJOUFA">via GIPHY</a></p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFo-ncDYB5wTGUaMbK6qj0v6_GonEMI4GWc1ZFWZ3hCu6Fw/viewform?usp=sf_link" target="_blank">~Request the code~</a>
+                <h3>Web Server</h3>
+                <p>A small personal web server that can serve files, stream MP4 video, and provide simple token-based authentication API. Persistent connections
+                    as per the HTTP/1.1 protocol were also implemented. The final part of the project involved hosting a small react-app on an AWS node.
+                </p>
         </div>
 
         <div class="contact" id="contact">
             <h2>Contact me:</h2>
             <p class="email">Email: liamm18@vt.edu</p>
+            <p>LinkedIn: https://www.linkedin.com/in/80-liam-mcfadden/</p>
+            <p>GitHub: https://github.com/LiamMcFadden</p>
         </div>
     </div>
     
