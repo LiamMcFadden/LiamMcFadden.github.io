@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background: url(img/snow-covered-mountain-1428277.jpg) no-repeat;
+    background-size: cover;
+}
+
 .first-view {
     position: absolute;
     top: 10%;
@@ -64,8 +69,6 @@
     margin-bottom: 2vh;
 }
 
-
-
 .learn-more {
     margin-top: 20px;
     margin-left: -4px;
@@ -81,18 +84,10 @@
     font-size: 2.2vh;
 }
 
-.skills-bg {
-    min-height: calc(var(--vh, 1vh) * 100 * 1.5);
-    /* image from https://www.pexels.com/photo/snow-covered-mountain-1428277/ */
+.skills-wrapper {
     background: url(img/snow-covered-mountain-1428277.jpg) no-repeat;
     background-size: cover;
-}
-
-.skills-wrapper {
-    position: absolute;
-    min-height: calc(var(--vh, 1vh) * 100 * 1.5);
     width: 100%;
-    top: calc(var(--vh, 1vh) * 100);
     color: white;
 }
 
@@ -134,11 +129,11 @@
     border-bottom: 3px solid black;
 }
 
-.Python {
+.lang {
     text-align: initial;
 }
 
-.Python li, .Python ul {
+.lang li, .lang ul {
     margin-left: 10px;
 }
 
@@ -152,17 +147,9 @@
 
 /* PROJECTS NEEDS WORK, MAKE LIKE SKILLS */
 
-.projects-bg {
-    min-height: calc(var(--vh, 1vh) * 100 * 2.5);
-    /* image from https://www.pexels.com/photo/macro-shot-of-wooden-planks-326333/ */
+.projects-wrapper {
     background: url(img/fogs-on-green-mountain-1054222.jpg) no-repeat;
     background-size: cover;
-}
-
-.projects-wrapper {
-    position: absolute;
-    top: calc(var(--vh, 1vh) * 100 * 2.5);
-    min-height: calc(var(--vh, 1vh) * 100 * 2.5);
     width: 100%;
 }
 
@@ -248,10 +235,6 @@
 }
 
 @media only screen and (max-width: 1080px) {
-    .projects-wrapper, .projects-bg {
-        min-height: calc(var(--vh, 1vh) * 100 * 4.3);
-    }
-
     .project {
         max-width: 70vw;
     }
@@ -271,17 +254,8 @@
         padding-top: 7vh;
     }
 
-    .skills-bg, .skills-wrapper {
-        min-height: calc(var(--vh, 1vh) * 100 * 2);
-    }
-
     .project {
         min-width: 90vw;
-    }
-
-    .projects-wrapper, .projects-bg {
-        top: calc(var(--vh, 1vh) * 100 * 3);
-        min-height: calc(var(--vh, 1vh) * 100 * 4);
     }
 }
 
