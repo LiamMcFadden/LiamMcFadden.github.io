@@ -1,1 +1,60 @@
 /* main css file */
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+	background-color: #FBFAF5;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+.logo {
+	margin-left: 1em;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	top: 0px;
+    background-color: rgba(251, 250, 245, 0.8);
+	position: fixed;
+}
+
+.nav-items {
+	margin-left: 3em;
+	display: flex;
+}
+
+.nav-items a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-items a:hover {
+	color: blue;
+	font-weight: bold;
+}
+
+.nav-items li {
+	padding: 2em;
+}
+
+.section {
+	margin: 5em;
+}
+
+.experience {
+	margin-top: 7em;
+}
