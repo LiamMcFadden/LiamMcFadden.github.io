@@ -68,8 +68,19 @@ li {
 	padding: 2em;
 }
 
+.wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 .section {
 	margin: 5em;
+	margin-top: 7em;
+	flex: 1 0 40%;
 }
 
 .section-heading {
@@ -78,13 +89,11 @@ li {
 	font-size: 1.2em;
 	font-weight: bold;
 	margin-bottom: 1em;
-	margin-right: auto;
 }
 
 
 .experience {
 	margin-top: 7em;
-	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -115,7 +124,6 @@ li {
 	/* text */
 	color: #000;
 	font-size: 1.2em;
-	font-weight: bold;
 
 	/* transition */
 	transition: all 0.3s ease-in-out;
@@ -140,4 +148,35 @@ li {
 	font-size: 0.8em;
 	font-weight: lighter;
 	margin-bottom: 1em;
+}
+
+/* Skill Section */
+.skills-container {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.skill {
+	max-width: 300px;
+	flex: 1 0 28%;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ccc;
+	background-color: #fff;
+	color: #000;
+	font-size: 1.2em;
+	transition: all 0.3s ease-in-out;
+}
+
+.skill:hover {
+	box-shadow: 0px 0px 50px #ccc;
 }
