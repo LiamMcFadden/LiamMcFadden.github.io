@@ -79,7 +79,7 @@ li {
 
 .section {
 	margin: 5em;
-	margin-top: 7em;
+	margin-bottom: 0;
 	flex: 1 0 40%;
 }
 
@@ -159,6 +159,7 @@ li {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 2em;
 }
 
 .skill {
@@ -179,4 +180,24 @@ li {
 
 .skill:hover {
 	box-shadow: 0px 0px 50px #ccc;
+}
+
+.skills-heading {
+	/* center */
+	text-align: center;
+	margin-bottom: 1em;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.skill-projects {
+	font-size: 0.8em;
+}
+
+.skill-projects ul {
+	margin-left: 1em;
+}
+
+.skill-projects li {
+	list-style-type: initial;
 }
