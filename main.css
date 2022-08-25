@@ -201,3 +201,8 @@ li {
 .skill-projects li {
 	list-style-type: initial;
 }
+
+.skill-projects a {
+	text-decoration: underline;
+	color: black;
+}
