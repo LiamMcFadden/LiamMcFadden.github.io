@@ -8,6 +8,7 @@
 	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
 	<script src='main.js'></script>
 	<script src="https://kit.fontawesome.com/1867ff0a53.js" crossorigin="anonymous"></script>
@@ -25,6 +26,10 @@
 			<li><a href="https://github.com/LiamMcFadden" target="_blank"><i class="fab fa-github"></i></a></li>
 			<li><a href="https://www.linkedin.com/in/80-liam-mcfadden/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
 		</ul>
+
+		<a href="javascript:void(0);" class="burger" onclick="navbarToggle()">
+			<i class="fas fa-bars"></i>
+		</a>
 	</nav>
 
 	<div class="wrapper">
@@ -84,7 +89,7 @@
 			<h2 class="section-heading">[Skills]</h2>
 			
 			<h3 class="skills-heading">Languages</h2>
-			<div class="skills-container">
+			<div class="container">
 				<div class="skill">
 					<h4>Python</h4>
 					<progress max="100" value="80"></progress>
@@ -162,7 +167,7 @@
 			</div>
 
 			<h3 class="skills-heading">Tools/Technologies</h2>
-			<div class="skills-container">
+			<div class="container">
 				<div class="skill">
 					<h4>Agile Methodolgies</h4>
 					<progress max="100" value="55"></progress>
@@ -229,6 +234,31 @@
 
 		<div class="projects section" id="projects">
 			<h2 class="section-heading">[Projects]</h2>
+			<div class="container">
+				<div class="project">
+					<h3 class="project-title">Virginia Bar Association Wellness <a href="https://github.com/LiamMcFadden/VBAWellnessApp" target="_blank"><i class="fab fa-github"></i></a></li></h3>
+					<i>React Native, JavaSCript, Firebase</i>
+					<p class="project-description">
+						Worked with three other students to develop a fitness competition app for the Virginia Bar Association. Weekly client meetings were held where we discussed our progress and their expectations. Throughout the course of development, Agile methodologies were used to keep us on track to meet our client's deadlines. The app was built using React Native and Firebase. My largest contribution was the leaderboard page seen below. Each user item linked to their profile page and the leaderboard could be sorted by either total points or badges requried. 
+					</p>
+					<img src="img/vba-wellness.png" alt="VBA Wellness App" class="project-image">
+				</div>
+				<div class="project">
+					<h3 class="project-title">Custom Web Server</h3>
+					<i>C, http, AWS, Docker</i>
+					<p class="project-description">
+						A personal web server that can serve files, stream MP4 video, and provide a simple token-based authentication API. Persistent connections as per the HTTP/1.1 protocol were also implemented. Hosed a small react-app within a Docker container on an AWS node using the server.
+					</p>
+				</div>
+				<div class="project">
+					<h3 class="project-title">Self Driving Car in Rocket League <a href="https://github.com/LiamMcFadden/RL-SelfDrivingCar" target="_blank"><i class="fab fa-github"></i></a></li></h3>
+					<i>Python, OpenCV, Win32API</i>
+					<p class="project-description">
+						With the Win32API, OpenCV, and Numpy, I can successfully identify and track the ball on the screen. This project is ongoing and has seen several approaches to ball identification and tracking including: centroid tracking, template matching, "You only look once" object detection, and most recently cascading classification. I have had the most success implementing template matching, however I hope that training a cascading classifier will yield better results.  
+					</p>
+					<img style="width: 100%;" src="img/rl-selfdrivingcar.png" alt="RL Self Driving Car" class="project-image">
+				</div>
+			</div>
 		</div>
 
 		<div class="contact section" id="contact">
